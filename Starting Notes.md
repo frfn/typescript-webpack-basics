@@ -1,0 +1,63 @@
+# Starting Webpack basics!
+
+0.  create new folder that is name compatible with `npm`
+
+    -   > / react-plus-typescript
+
+1.  `npm init`
+
+    -   defaults
+
+2.  `npm i -D webpack webpack-cli`
+
+    -   two packages
+
+3.  create `/ src` folder
+
+    -   create `index.js` file | added `alert("Hi")` for test
+
+4.  build script for running app
+
+    -   `"script": { "build": "webpack --mode produciton" }`
+
+5.  `npm run build`
+
+    -   will create `/ dist` folder & `main.js` ( all bundled js files )
+
+6.  create HTML page in `/ dist` folder
+
+    -   `index.html`
+
+    -   open through finder!
+
+    -   in `/ dist` you can open, in `/ src`, it doesn't
+
+7.  `npm i -D html-webpack-plugin`
+
+    -   create config file for webpack!
+
+8.  `webpack.config.js` file
+
+    -   look at it! you made this config file
+
+9.  by configuring the webpack config, we can `npm run build` and will build the js file with HtmlWebpackPlugin add ons!
+
+10. `npm i -D webpack-dev-server`
+
+    so we can test app locally on machine + updates the file code and rebuilds the app, updating the browser!
+
+    `"start": "webpack serve --mode development --open 'google chrome'",`,this is updated!, webpack-dev-server does not work anymore!
+
+    -   `webpack` and `webpack-cli` modules have been updated. `Webpack` released version 5 and `webpack-cli` is version 4.
+    -   So, using latest versions, you should run webpack dev server using `webpack serve`:
+
+11. `.gitignore`
+
+    -   dist
+    -   node_modules
+
+---
+
+# Adding TS to the development flow!
+
+1.
