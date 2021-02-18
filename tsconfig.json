@@ -1,7 +1,12 @@
 {
 	"compilerOptions": {
-		"target": "ES6",
+		"noEmit": true,
+		"target": "ESNext",
 		"module": "ES6",
-		"strict": true
-	}
+		"strict": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true
+	},
+	"include": ["./src/**/*"]
 }
